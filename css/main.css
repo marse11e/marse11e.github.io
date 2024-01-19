@@ -61,6 +61,22 @@ body {
 	bottom: calc(var(--index) * -4.5);
 }
 
+.box-skils {
+	border-radius: 15px;
+	
+	animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+	0% {box-shadow: 0 0 15px white;}
+	20% {box-shadow: 0 0 15px red;}
+	40% {box-shadow: 0 0 15px orange;}
+	60% {box-shadow: 0 0 15px yellow;}
+	80% {box-shadow: 0 0 15px green;}
+	100% {box-shadow: 0 0 15px white;}
+}
+
+
 .layers {
 	height: 100vh;
 	display: flex;
@@ -105,6 +121,7 @@ body {
 	color: var(--text);
 	text-shadow: 0 0 15px #9d822b;
 }
+
 
 .layers__title {
 	font-size: calc(var(--index) * 2.65);
